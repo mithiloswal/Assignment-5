@@ -8,6 +8,7 @@ The "/movies/<id>" route displays the details of an individual movie with any gi
 The files are compiled into an image which runs in a Docker container.
 
 Steps to run:-
+
 1.) Change the working directory in terminal to the assignment folder.
 
 2.) In the Docker terminal, create Docker image by running "docker build -t flask-image:latest ."
