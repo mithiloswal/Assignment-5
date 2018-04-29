@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+  <body style="background-color:#d0ff00">
+    <br>
+    <h1><center><u> RESTful Web Service implementation in Docker using Python and Flask </u></center></h1>
+    <br>
+
+    <table class="table" style="background-color:#ffbb00; border-spacing:10px">
+      <thead>
+        <tr style="font-weight:bold; font-size:25px">
+          <th scope="col" style="padding:25px">ID</th>
+          <th scope="col" style="padding:25px">Movie</th>
+          <th scope="col" style="padding:25px">Genre</th>
+          <th scope="col" style="padding:25px">Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in list_data %}
+        <tr>
+          <td scope="row" style="padding:20px"> {{ i.id }} </td>
+          <td scope="row" style="padding:20px"> {{ i.name }} </td>
+          <td scope="row" style="padding:20px"> {{ i.genre }} </td>
+          <td scope="row" style="padding:20px"> {{ i.year }} </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
